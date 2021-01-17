@@ -30,10 +30,10 @@ public class Test_login_System {
 	public void verifying_home_page_is_displayed() throws Throwable {
 
 		String Expected_Title = "my store";
-		String Expected_Title1 = "my store";
+		
 		String pageTitle = driver.getTitle();
 		System.out.println(pageTitle);
-		System.out.println(Expected_Title1);
+	
 		boolean verify = pageTitle.equalsIgnoreCase(Expected_Title);
 		System.out.println("home page is displayed: " + verify);
 		Assert.assertTrue(verify);
