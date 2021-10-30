@@ -46,25 +46,31 @@ public class Test_login_System {
 	public void ckicked_on_login_button() throws Throwable {
 
 		home.Sign_In_Button.click();
-		System.out.println("ckicked on login button");
-		System.out.println("ckicked on login button");
-
+		System.out.println("clicked on SignIn button");
+		
 	}
 
 	@Then("^Entered valid email id \"([^\"]*)\"$")
-	public void entered_valid_email_id(String arg1) throws Throwable {
+	public void entered_valid_email_id(String email) throws Throwable {
+		
+		
+		home.Email_ID.sendKeys(email);
 		System.out.println("Entered valid email id");
 
 	}
 
 	@Then("^entered valid password \"([^\"]*)\"$")
-	public void entered_valid_password(String arg1) throws Throwable {
-
+	public void entered_valid_password(String Password) throws Throwable {
+		
+		home.Password.sendKeys(Password);
+		System.out.println("Entered valid Password id");
 	}
 
 	@Then("^clicked on sign in button$")
 	public void clicked_on_sign_in_button() throws Throwable {
 
+		home.Submit_Login.click();
+		System.out.println("Clicked On Submit Login Button");
 	}
 
 }

@@ -8,9 +8,9 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		
-		features="C:\\Users\\Admin\\eclipse-workspace\\Ecommerce\\features\\login.feature",
+		features="D:\\My Projects\\SBIMF\\Ecommerce_Maven\\Ecommerce\\features\\WomenSection.feature",
 		tags= "@Test_001",
-		dryRun= false,
+		dryRun= true,
 		glue= "stepDefinitions", monochrome =true, strict=true
 		)
 

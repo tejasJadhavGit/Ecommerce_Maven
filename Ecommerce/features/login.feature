@@ -11,4 +11,4 @@ Then entered valid password "<password>"
 Then clicked on sign in button
 Examples:
 |Email_Address            |password|
-|tejasjadhav8888@gmail.com| 12345  |
+|gorerevati91@gmail.com | gore@123  |

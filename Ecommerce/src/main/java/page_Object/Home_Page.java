@@ -24,4 +24,15 @@ public class Home_Page {
 	@FindBy(how= How.XPATH, using="//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a")
 	public WebElement Sign_In_Button;
 	
+	@FindBy(how= How.XPATH, using="//*[@id='email']")        
+	public WebElement Email_ID;
+	
+	@FindBy(how= How.XPATH, using="//*[@id='passwd']")        
+	public WebElement Password;
+	
+	@FindBy(how= How.XPATH, using="//*[@id='SubmitLogin']")        
+	public WebElement Submit_Login;
+	
+	
+	
 }
