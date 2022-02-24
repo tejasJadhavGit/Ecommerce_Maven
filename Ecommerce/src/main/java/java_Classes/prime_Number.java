@@ -1,3 +1,4 @@
+package java_Classes;
 
 public class prime_Number {
 
