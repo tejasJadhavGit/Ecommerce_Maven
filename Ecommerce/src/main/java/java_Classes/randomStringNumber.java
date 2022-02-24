@@ -1,3 +1,4 @@
+package java_Classes;
 import java.util.Random;
 import java.util.stream.IntStream;
 
