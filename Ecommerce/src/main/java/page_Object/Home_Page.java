@@ -34,5 +34,11 @@ public class Home_Page {
 	public WebElement Submit_Login;
 	
 	
+	@FindBy(how= How.XPATH, using="//ul[@Class=\"sf-menu clearfix menu-content sf-js-enabled sf-arrows\"]/li[1]/ul/li/ul/li[1]/a[text()=\"T-shirts\"]")        
+	public WebElement Tshirt;
+	
+	@FindBy(how= How.XPATH, using="//ul[@Class=\"sf-menu clearfix menu-content sf-js-enabled sf-arrows\"]/li[1]/a")        
+	public WebElement Women;
+	
 	
 }

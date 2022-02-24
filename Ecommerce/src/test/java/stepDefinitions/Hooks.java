@@ -1,11 +1,17 @@
 package stepDefinitions;
 
+
+import org.openqa.selenium.WebDriver;
+
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-import setup.driver_Setup;
+import helpers.Base;
 
-public class Hooks {
+
+public class Hooks extends Base {
+	
+	public WebDriver  driver ;
 	
 	@Before
     public void beforeScenario() throws Throwable {
@@ -20,8 +26,10 @@ public class Hooks {
 
 
         Thread.sleep(2000);
-
-     //   driver_Setup.driver.quit();
+        
+//        driver= getDriver();
+//        driver.quit();
+     
 
         System.out.println(" <------------------ Run After the Scenario ------------------------->");
     }
