@@ -8,12 +8,14 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		
-		features="C:\\Users\\Admin\\eclipse-workspace\\Ecommerce\\features\\login.feature",
-		tags= "@Test_001",
+		features="D:\\My Projects\\SBIMF\\Ecommerce_Maven\\Ecommerce\\features",
+		tags= "@Test_01",
 		dryRun= false,
 		glue= "stepDefinitions", monochrome =true, strict=true
 		)
 
 public class Test_runner {
+	
+	
 
 }
