@@ -15,9 +15,7 @@ public class DescendingArray {
 		String b = " ";
 		for (int i=0; i<a.length; i++ )
 		{
-
-			b= b + " " + a[i] ;
-
+		b= b + " " + a[i] ;
 		}
 		System.out.println( " Ascending numbers = " + b);
 
