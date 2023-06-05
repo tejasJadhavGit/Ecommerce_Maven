@@ -82,7 +82,6 @@ Arrays.sort(c, Collections.reverseOrder());
 
 	}
 
-
 	private static void extracted(Scanner sc) {
 		String num= sc.nextLine();
 		System.out.println(num);
