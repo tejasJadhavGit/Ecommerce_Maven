@@ -17,21 +17,21 @@ public class Base
 	
 	@Test
 	
-	public WebDriver getDriver()
+	public void getDriver()
 	{
 		 WebDriverManager.chromedriver().setup();
 	       driver=new ChromeDriver();
 	       
 	       driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	   	
-	   	return driver;
+
 		
 	}
 @Test
-	public WebDriver driverSetup() throws IOException
+	public void driverSetup() throws IOException
 	{
 	Properties prop= new Properties();
-	String path = "D:\\My Projects\\SBIMF\\Ecommerce_Maven\\Ecommerce\\src\\main\\java\\utility.properties";
+	String path = "C:\\Users\\Admin\\Downloads\\chromedriver_win32//chromedriver.exe";
 	FileInputStream fis= new FileInputStream(path);
 
 	prop.load(fis);
@@ -49,7 +49,7 @@ public class Base
 	
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	
-	return driver;
+
 }
 }
 

@@ -21,7 +21,7 @@ public class Test_login_System extends Base
 
 	@Given("^launching ecommerce site$")
 	public void launching_ecommerce_site() throws Throwable {
-		driver=driverSetup();
+		driverSetup();
 		driver.get("http://automationpractice.com/index.php");
 		 driver.manage().window().maximize(); 
 		 System.out.println(" Ecommerce site launched successfully");

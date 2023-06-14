@@ -82,9 +82,14 @@ Arrays.sort(c, Collections.reverseOrder());
 
 	}
 
-	private static void extracted(Scanner sc) {
-		String num= sc.nextLine();
-		System.out.println(num);
+	@Test
+	private static void revstr() {
+		ArrayList<String> ar= new ArrayList<String>();
+
+		ar.add("Hello");
+		ar.add("Bye");
+
+		System.out.println(ar);
 	}
 
 

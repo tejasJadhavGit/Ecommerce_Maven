@@ -1,4 +1,5 @@
 package java_Classes;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -12,19 +13,29 @@ public class arrayToarraylist {
 		
 		for (int i=0; i<name.length; i++) {
 			
-			
 		System.out.println(name[i]);
 		
-		//convert array into array list
 		}
-		
-List al= Arrays.asList(name);
-		
-		System.out.println(al);
-		al.add(2, "Hollo");
-		System.out.println(al);
-		
-		
+
+//		List al= Arrays.asList(name);
+//
+//		System.out.println("list of " + al);
+//		al.add("Hollo");
+//		al.add("Hi");
+//		System.out.println(al);
+//		System.out.println("Printed list of " + al);
+
+		//When we convert array into array list does not let us add more elements to the converted list,
+		// therefore, in such cases we create a new ArrayList and pass the converted list to the constructor
+		// of the new ArrayList using new ArrayList<>(Arrays.asList()).
+
+		List str=new ArrayList<>(Arrays.asList(name));
+
+		str.add("Hollo");
+		str.add("Hi");
+		System.out.println(str);
+
+
 	}
 
 }
