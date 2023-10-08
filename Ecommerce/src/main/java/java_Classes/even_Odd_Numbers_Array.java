@@ -8,24 +8,18 @@ public class even_Odd_Numbers_Array {
 		int a[]= {12, 34, 23, 90, 44, 11, 13};	
 		
 		System.out.println("Even Number ");
-		for (int value:a)
+		for (int i=0; i<a.length; i++)
 		{
 			
-			if ((value%2==0))
-			{
-				System.out.println(value);
-			}
+			if (a[i]%2!=0)
+
+				System.out.println(a[i] + " odd number " );
+
+			else
+				System.out.println(a[i] + " even number " );
 		}	
 
-		System.out.println("Odd Number ");
-		for (int value:a) {
-		
-			
-			if (!(value%2==0))
-			{
-				System.out.println( value);
-			}
-		}
+
 	}
 
 }
